@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD3D90FF2077EE640029292C /* Decima Nova Pro Heavy Ital.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90F72077EE640029292C /* Decima Nova Pro Heavy Ital.otf */; };
+		BD3D91002077EE640029292C /* Decima Nova Pro Bold Ital.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90F82077EE640029292C /* Decima Nova Pro Bold Ital.otf */; };
+		BD3D91012077EE640029292C /* Decima Nova Pro Light Ital.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90F92077EE640029292C /* Decima Nova Pro Light Ital.otf */; };
+		BD3D91022077EE640029292C /* Decima Nova Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90FA2077EE640029292C /* Decima Nova Pro Light.otf */; };
+		BD3D91032077EE640029292C /* Decima Nova Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90FB2077EE640029292C /* Decima Nova Pro Bold.otf */; };
+		BD3D91042077EE640029292C /* Decima Nova Pro Ital.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90FC2077EE640029292C /* Decima Nova Pro Ital.otf */; };
+		BD3D91052077EE640029292C /* Decima Nova Pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90FD2077EE640029292C /* Decima Nova Pro.otf */; };
+		BD3D91062077EE640029292C /* Decima Nova Pro Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90FE2077EE640029292C /* Decima Nova Pro Heavy.otf */; };
+		BD3D910C207804C10029292C /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D910B207804C10029292C /* utils.swift */; };
+		BD3D910E207808560029292C /* flowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D910D207808560029292C /* flowManager.swift */; };
 		BDB5B8822077C6B20077A296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5B8812077C6B20077A296 /* AppDelegate.swift */; };
-		BDB5B8842077C6B20077A296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5B8832077C6B20077A296 /* ViewController.swift */; };
+		BDB5B8842077C6B20077A296 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5B8832077C6B20077A296 /* HomeViewController.swift */; };
 		BDB5B8872077C6B20077A296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB5B8852077C6B20077A296 /* Main.storyboard */; };
 		BDB5B88A2077C6B20077A296 /* weatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDB5B8882077C6B20077A296 /* weatherApp.xcdatamodeld */; };
 		BDB5B88C2077C6B20077A296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB5B88B2077C6B20077A296 /* Assets.xcassets */; };
 		BDB5B88F2077C6B20077A296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB5B88D2077C6B20077A296 /* LaunchScreen.storyboard */; };
 		BDB5B89A2077C6B30077A296 /* weatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5B8992077C6B30077A296 /* weatherAppTests.swift */; };
 		BDB5B8A52077C6B30077A296 /* weatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5B8A42077C6B30077A296 /* weatherAppUITests.swift */; };
+		BDEC1E9B2078C5D6001FF17F /* SearchByNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC1E9A2078C5D6001FF17F /* SearchByNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +46,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD3D90F72077EE640029292C /* Decima Nova Pro Heavy Ital.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Heavy Ital.otf"; sourceTree = "<group>"; };
+		BD3D90F82077EE640029292C /* Decima Nova Pro Bold Ital.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Bold Ital.otf"; sourceTree = "<group>"; };
+		BD3D90F92077EE640029292C /* Decima Nova Pro Light Ital.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Light Ital.otf"; sourceTree = "<group>"; };
+		BD3D90FA2077EE640029292C /* Decima Nova Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Light.otf"; sourceTree = "<group>"; };
+		BD3D90FB2077EE640029292C /* Decima Nova Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Bold.otf"; sourceTree = "<group>"; };
+		BD3D90FC2077EE640029292C /* Decima Nova Pro Ital.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Ital.otf"; sourceTree = "<group>"; };
+		BD3D90FD2077EE640029292C /* Decima Nova Pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro.otf"; sourceTree = "<group>"; };
+		BD3D90FE2077EE640029292C /* Decima Nova Pro Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Heavy.otf"; sourceTree = "<group>"; };
+		BD3D910B207804C10029292C /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		BD3D910D207808560029292C /* flowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flowManager.swift; sourceTree = "<group>"; };
 		BDB5B87E2077C6B20077A296 /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB5B8812077C6B20077A296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDB5B8832077C6B20077A296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDB5B8832077C6B20077A296 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BDB5B8862077C6B20077A296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDB5B8892077C6B20077A296 /* weatherApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weatherApp.xcdatamodel; sourceTree = "<group>"; };
 		BDB5B88B2077C6B20077A296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +70,7 @@
 		BDB5B8A02077C6B30077A296 /* weatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB5B8A42077C6B30077A296 /* weatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherAppUITests.swift; sourceTree = "<group>"; };
 		BDB5B8A62077C6B30077A296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDEC1E9A2078C5D6001FF17F /* SearchByNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +98,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD3D90F62077EE190029292C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D90F82077EE640029292C /* Decima Nova Pro Bold Ital.otf */,
+				BD3D90FB2077EE640029292C /* Decima Nova Pro Bold.otf */,
+				BD3D90F72077EE640029292C /* Decima Nova Pro Heavy Ital.otf */,
+				BD3D90FE2077EE640029292C /* Decima Nova Pro Heavy.otf */,
+				BD3D90FC2077EE640029292C /* Decima Nova Pro Ital.otf */,
+				BD3D90F92077EE640029292C /* Decima Nova Pro Light Ital.otf */,
+				BD3D90FA2077EE640029292C /* Decima Nova Pro Light.otf */,
+				BD3D90FD2077EE640029292C /* Decima Nova Pro.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BD3D91072077EE700029292C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC1E9A2078C5D6001FF17F /* SearchByNameViewController.swift */,
+				BDB5B8832077C6B20077A296 /* HomeViewController.swift */,
+				BDB5B8852077C6B20077A296 /* Main.storyboard */,
+			);
+			name = Views;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		BD3D91082077FCD30029292C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D910D207808560029292C /* flowManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD3D91092077FCDC0029292C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D910B207804C10029292C /* utils.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BDB5B8752077C6B20077A296 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +163,11 @@
 		BDB5B8802077C6B20077A296 /* weatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				BD3D91092077FCDC0029292C /* Model */,
+				BD3D91082077FCD30029292C /* Controller */,
+				BD3D91072077EE700029292C /* Views */,
+				BD3D90F62077EE190029292C /* Fonts */,
 				BDB5B8812077C6B20077A296 /* AppDelegate.swift */,
-				BDB5B8832077C6B20077A296 /* ViewController.swift */,
-				BDB5B8852077C6B20077A296 /* Main.storyboard */,
 				BDB5B88B2077C6B20077A296 /* Assets.xcassets */,
 				BDB5B88D2077C6B20077A296 /* LaunchScreen.storyboard */,
 				BDB5B8902077C6B20077A296 /* Info.plist */,
@@ -232,7 +298,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3D91032077EE640029292C /* Decima Nova Pro Bold.otf in Resources */,
+				BD3D91002077EE640029292C /* Decima Nova Pro Bold Ital.otf in Resources */,
+				BD3D91052077EE640029292C /* Decima Nova Pro.otf in Resources */,
+				BD3D90FF2077EE640029292C /* Decima Nova Pro Heavy Ital.otf in Resources */,
+				BD3D91022077EE640029292C /* Decima Nova Pro Light.otf in Resources */,
+				BD3D91062077EE640029292C /* Decima Nova Pro Heavy.otf in Resources */,
 				BDB5B88F2077C6B20077A296 /* LaunchScreen.storyboard in Resources */,
+				BD3D91042077EE640029292C /* Decima Nova Pro Ital.otf in Resources */,
+				BD3D91012077EE640029292C /* Decima Nova Pro Light Ital.otf in Resources */,
 				BDB5B88C2077C6B20077A296 /* Assets.xcassets in Resources */,
 				BDB5B8872077C6B20077A296 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB5B8842077C6B20077A296 /* ViewController.swift in Sources */,
+				BD3D910E207808560029292C /* flowManager.swift in Sources */,
+				BDB5B8842077C6B20077A296 /* HomeViewController.swift in Sources */,
+				BDEC1E9B2078C5D6001FF17F /* SearchByNameViewController.swift in Sources */,
+				BD3D910C207804C10029292C /* utils.swift in Sources */,
 				BDB5B88A2077C6B20077A296 /* weatherApp.xcdatamodeld in Sources */,
 				BDB5B8822077C6B20077A296 /* AppDelegate.swift in Sources */,
 			);

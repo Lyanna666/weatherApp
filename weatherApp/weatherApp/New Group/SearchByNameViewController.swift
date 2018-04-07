@@ -1,25 +1,23 @@
 //
-//  ViewController.swift
+//  SearchByNameViewController.swift
 //  weatherApp
 //
-//  Created by Andrea González García on 6/4/18.
+//  Created by Andrea González García on 7/4/18.
 //  Copyright © 2018 Andrea González García. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SearchByNameViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.navigationController?.isNavigationBarHidden = false;
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
