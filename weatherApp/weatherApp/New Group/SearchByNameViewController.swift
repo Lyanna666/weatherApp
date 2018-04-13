@@ -10,6 +10,8 @@ import UIKit
 
 class SearchByNameViewController: UIViewController {
     
+    @IBOutlet weak var cityTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,5 +21,12 @@ class SearchByNameViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func userDidTapSearchButton(_ sender: Any) {
+        
+        showLoadingView(view: self.view)
+        
+        FlowManager(cityName: cityTextField.text!).userDidTapButton(tagButton:0)
     }
 }

@@ -19,8 +19,7 @@ class HomeViewController: UIViewController {
     //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view, typically from a nib.
+    
         buildView();
     }
 
@@ -53,7 +52,6 @@ class HomeViewController: UIViewController {
     
     @IBAction func userDidTapButton(_ sender: UIButton) {
         
-        flowManager().userDidTapButton(tagButton: sender.tag)
     }
     
 
