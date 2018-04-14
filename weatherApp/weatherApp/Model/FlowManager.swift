@@ -14,8 +14,10 @@ class FlowManager {
     private let dataManager:DataManager
     public var cityName:String!
     
+    var currentView:SearchByNameViewController!
+    
     init() {
-        dataManager = DataManager(baseURL: API.BaseURL, apiKey: API.APIKey)
+        dataManager = DataManager(baseURL: APIModel.BaseURL, apiKey: APIModel.APIKey)
     }
     
     convenience init(cityName:String) {
@@ -23,20 +25,27 @@ class FlowManager {
         self.cityName = cityName
     }
     
-    func userDidTapButton(tagButton: NSInteger) {
-        
-        switch tagButton {
-        case 0:
-            
-            dataManager.getWeatherByName(cityName:cityName)
-            
-            break;
-        default:
-            break;
-        }
+    func startRequestGetWeatherByCity (viewController:SearchByNameViewController){
+        dataManager.setFlowManager(flowManager: self)
+        self.currentView = viewController
+        dataManager.getWeatherByName(cityName:cityName)
     }
     
-   
-    
+    func getWeatherByNameFinnished(stateCode:DataManagerError,base:Base?) {
+        
+//        let view:SearchByNameViewController = SearchByNameViewController()
+        
+        switch stateCode {
+        case DataManagerError.Ok:
+            currentView.webServiceDidOk(base: base!)
+            break
+        case DataManagerError.Ko:
+            currentView.webServiceFailed()
+            break
+        default:
+            break
+        }
+    }
+
 }
 

@@ -1,0 +1,91 @@
+//
+//  weatherModel.swift
+//  weatherApp
+//
+//  Created by Andrea González García on 13/4/18.
+//  Copyright © 2018 Andrea González García. All rights reserved.
+//
+
+import UIKit
+
+struct Base : Codable {
+    let location : Location
+    let current : Current
+    let forecast : Forecast
+}
+
+struct Current : Codable {
+    let last_updated_epoch : Int
+    let last_updated : String
+    let temp_c : Int
+    let temp_f : Double
+    let is_day : Int
+    let condition : Condition
+    let wind_mph : Double
+    let wind_kph : Double
+    let wind_degree : Int
+    let wind_dir : String
+    let pressure_mb : Int
+    let pressure_in : Double
+    let precip_mm : Double
+    let precip_in : Double
+    let humidity : Int
+    let cloud : Int
+    let feelslike_c : Double
+    let feelslike_f : Double
+    let vis_km : Int
+    let vis_miles : Int
+}
+
+struct Location : Codable {
+    let name : String?
+    let region : String?
+    let country : String?
+    let lat : Double?
+    let lon : Double?
+    let tz_id : String?
+    let localtime_epoch : Int?
+    let localtime : String?
+}
+
+struct Condition : Codable {
+    let text : String?
+    let icon : String?
+    let code : Int?
+}
+
+struct Day : Codable {
+    let maxtemp_c : Double?
+    let maxtemp_f : Double?
+    let mintemp_c : Double?
+    let mintemp_f : Double?
+    let avgtemp_c : Double
+    let avgtemp_f : Double?
+    let maxwind_mph : Double?
+    let maxwind_kph : Double?
+    let totalprecip_mm : Double?
+    let totalprecip_in : Double?
+    let avgvis_km : Double?
+    let avgvis_miles : Double?
+    let avghumidity : Double?
+    let condition : Condition?
+    let uv : Double?
+}
+
+struct Forecast : Codable {
+    let forecastday : [Forecastday]?
+}
+
+struct Forecastday : Codable {
+    let date : String?
+    let date_epoch : Int?
+    let day : Day
+    let astro : Astro?
+}
+
+struct Astro : Codable {
+    let sunrise : String?
+    let sunset : String?
+    let moonrise : String?
+    let moonset : String?
+}

@@ -11,17 +11,18 @@ import UIKit
 import Alamofire
 
 enum DataManagerError: Error {
-    
-    case Unknown
-    case FailedRequest
-    case InvalidResponse
-    
+    case Ok
+    case Ko
+    case Loading
 }
 
 final class DataManager {
     
     let baseURL: URL
     let apiKey: String
+    
+    var base:Base!
+    var flowManager:FlowManager!
     
     typealias WeatherDataCompletion = (AnyObject?, DataManagerError?) -> ()
     
@@ -32,26 +33,46 @@ final class DataManager {
         self.apiKey = apiKey
     }
     
+    func setFlowManager(flowManager:FlowManager) {
+        self.flowManager = flowManager
+    }
+    
     func getWeatherByName(cityName: String) {
         
-        var components = URLComponents(string: baseURL.absoluteString)!
+        APIModel.cityName = cityName
+        let cityUrl = APIModel.getSearchByCityUrl
+        var responseState = DataManagerError.Loading
+//        self.base = 
         
-        components.queryItems = [URLQueryItem(name: "key", value: apiKey), URLQueryItem(name: "q", value: cityName)]
-        NSLog("\(components.url!)")
-        
-        let url = WeatherModel.getSearchByCityUrl
-    
-        Alamofire.request(components.url!).responseJSON { response in
+        Alamofire.request(cityUrl).responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
             print("Result: \(response.result)")                         // response serialization result
             
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            let result = response.result.value
+            print(result ?? String())
+            if (result != nil) {
+                
+                if let status = response.response?.statusCode {
+                    switch(status){
+                    case 200:
+                        responseState = DataManagerError.Ok
+                        let data = response.data
+                        let decoder = JSONDecoder()
+                        self.base = try! decoder.decode(Base.self, from: data!)
+                        self.flowManager.getWeatherByNameFinnished(stateCode: responseState, base:self.base);
+                        
+                        break;
+                    default:
+                        responseState = DataManagerError.Ko
+                        self.flowManager.getWeatherByNameFinnished(stateCode: responseState, base:self.base);
+                        
+                    }
+                }
             }
-            
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                print("Data: \(utf8Text)") // original server data as UTF8 string
+            else {
+                responseState = DataManagerError.Ko
+                self.flowManager.getWeatherByNameFinnished(stateCode: responseState, base:self.base);
             }
         }
     }
