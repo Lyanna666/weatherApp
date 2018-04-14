@@ -10,6 +10,7 @@
 		0232EE7EA0F596D30923558E /* Pods_weatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9A6099B0B102448FD34B93 /* Pods_weatherAppTests.framework */; };
 		18C365F307B0021BAD4228D9 /* Pods_weatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE2EE05C757D6F69EBCC466 /* Pods_weatherAppUITests.framework */; };
 		BD0D1ACF2078DDB800CBB25B /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D1ACE2078DDB800CBB25B /* APIModel.swift */; };
+		BD2A1E592082B710004EFE95 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2A1E582082B710004EFE95 /* MapKit.framework */; };
 		BD3D90FF2077EE640029292C /* Decima Nova Pro Heavy Ital.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90F72077EE640029292C /* Decima Nova Pro Heavy Ital.otf */; };
 		BD3D91002077EE640029292C /* Decima Nova Pro Bold Ital.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90F82077EE640029292C /* Decima Nova Pro Bold Ital.otf */; };
 		BD3D91012077EE640029292C /* Decima Nova Pro Light Ital.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD3D90F92077EE640029292C /* Decima Nova Pro Light Ital.otf */; };
@@ -60,6 +61,7 @@
 		7B9A6099B0B102448FD34B93 /* Pods_weatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B224732A428F4473681263DE /* Pods-weatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weatherApp/Pods-weatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0D1ACE2078DDB800CBB25B /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		BD2A1E582082B710004EFE95 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD3D90F72077EE640029292C /* Decima Nova Pro Heavy Ital.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Heavy Ital.otf"; sourceTree = "<group>"; };
 		BD3D90F82077EE640029292C /* Decima Nova Pro Bold Ital.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Bold Ital.otf"; sourceTree = "<group>"; };
 		BD3D90F92077EE640029292C /* Decima Nova Pro Light Ital.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Decima Nova Pro Light Ital.otf"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2A1E592082B710004EFE95 /* MapKit.framework in Frameworks */,
 				D54BDCEAC1D4DE80C27FDEA5 /* Pods_weatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +127,7 @@
 		05F1868D0704F8D4172679B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD2A1E582082B710004EFE95 /* MapKit.framework */,
 				FAFDD0285200B2F77C3EBD48 /* Pods_weatherApp.framework */,
 				7B9A6099B0B102448FD34B93 /* Pods_weatherAppTests.framework */,
 				3FE2EE05C757D6F69EBCC466 /* Pods_weatherAppUITests.framework */,
@@ -326,6 +330,11 @@
 				TargetAttributes = {
 					BDB5B87D2077C6B20077A296 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BDB5B8942077C6B30077A296 = {
 						CreatedOnToolsVersion = 9.3;

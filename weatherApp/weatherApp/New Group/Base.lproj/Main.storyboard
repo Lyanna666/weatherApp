@@ -93,14 +93,17 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DecimaNovaProLt" family="Decima Nova Pro" pointSize="50"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSM-fa-IZw">
                                 <rect key="frame" x="15" y="521.33333333333337" width="345" height="0.0"/>
-                                <fontDescription key="fontDescription" name="DecimaNovaProLt" family="Decima Nova Pro" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="DecimaNovaPro-Bold" family="Decima Nova Pro" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -645,12 +648,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yJL-dv-Xnn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQz-9D-jnw">
+                    <navigationBar key="navigationBar" opaque="NO" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQz-9D-jnw">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
@@ -683,8 +684,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-P5-Ris">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce las coordenadas de tu ciudad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-rw-1Xe">
-                                                <rect key="frame" x="20" y="20" width="335" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce las coordenadas de tu ciudad o seleciona en el mapa el lugar sobre el que quieres buscar información:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-rw-1Xe">
+                                                <rect key="frame" x="20" y="9.9999999999999964" width="335" height="57.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -692,7 +693,7 @@
                                                 <size key="shadowOffset" width="1" height="-1"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRZ-BY-n78">
-                                                <rect key="frame" x="20" y="50" width="145" height="40"/>
+                                                <rect key="frame" x="20" y="72.666666666666657" width="145" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Jef-IG-tHg"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="cL5-gU-gGS"/>
@@ -701,17 +702,8 @@
                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-qJ-kOv">
-                                                <rect key="frame" x="325" y="55" width="30" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="3dQ-qx-OUf"/>
-                                                    <constraint firstAttribute="width" constant="30" id="TlJ-Tw-srT"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="search_icon"/>
-                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dH-kQ-ITD">
-                                                <rect key="frame" x="170" y="50" width="145" height="40"/>
+                                                <rect key="frame" x="170" y="72.666666666666657" width="145" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="CzI-kR-kER"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="kL7-UC-wf4"/>
@@ -720,6 +712,18 @@
                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-qJ-kOv">
+                                                <rect key="frame" x="325" y="77.666666666666657" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="3dQ-qx-OUf"/>
+                                                    <constraint firstAttribute="width" constant="30" id="TlJ-Tw-srT"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="search_icon"/>
+                                                <connections>
+                                                    <action selector="userDidTapSerachButton:" destination="cyN-ex-sl9" eventType="touchUpInside" id="kwy-f7-02z"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -729,10 +733,10 @@
                                             <constraint firstAttribute="trailing" secondItem="Kfk-rw-1Xe" secondAttribute="trailing" constant="20" id="Rjo-XW-0WS"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zRZ-BY-n78" secondAttribute="bottom" constant="10" id="Svw-yW-y3C"/>
                                             <constraint firstItem="Kfk-rw-1Xe" firstAttribute="leading" secondItem="tcc-P5-Ris" secondAttribute="leading" constant="20" id="TYP-Wb-F8k"/>
-                                            <constraint firstItem="zRZ-BY-n78" firstAttribute="top" secondItem="Kfk-rw-1Xe" secondAttribute="bottom" constant="10" id="WuR-C5-Ncl"/>
-                                            <constraint firstItem="4dH-kQ-ITD" firstAttribute="top" secondItem="Kfk-rw-1Xe" secondAttribute="bottom" constant="10" id="bFK-UU-3WV"/>
+                                            <constraint firstItem="zRZ-BY-n78" firstAttribute="top" secondItem="Kfk-rw-1Xe" secondAttribute="bottom" constant="5" id="WuR-C5-Ncl"/>
+                                            <constraint firstItem="4dH-kQ-ITD" firstAttribute="top" secondItem="Kfk-rw-1Xe" secondAttribute="bottom" constant="5" id="bFK-UU-3WV"/>
                                             <constraint firstItem="4dH-kQ-ITD" firstAttribute="leading" secondItem="zRZ-BY-n78" secondAttribute="trailing" constant="5" id="hEe-ZN-2jo"/>
-                                            <constraint firstItem="Kfk-rw-1Xe" firstAttribute="top" secondItem="tcc-P5-Ris" secondAttribute="top" constant="20" id="iWC-U5-9Cg"/>
+                                            <constraint firstItem="Kfk-rw-1Xe" firstAttribute="top" secondItem="tcc-P5-Ris" secondAttribute="top" constant="10" id="iWC-U5-9Cg"/>
                                             <constraint firstItem="Hph-qJ-kOv" firstAttribute="leading" secondItem="4dH-kQ-ITD" secondAttribute="trailing" constant="10" id="igN-yo-cK0"/>
                                             <constraint firstAttribute="height" constant="130" id="pVj-in-KhS"/>
                                             <constraint firstItem="Hph-qJ-kOv" firstAttribute="centerY" secondItem="zRZ-BY-n78" secondAttribute="centerY" id="vAB-uP-fET"/>
@@ -877,10 +881,11 @@
                                             <constraint firstAttribute="trailing" secondItem="ocl-Fc-6xS" secondAttribute="trailing" id="pkl-BV-USO"/>
                                         </constraints>
                                     </view>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-Cs-9j3">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-Cs-9j3">
                                         <rect key="frame" x="8" y="290" width="359" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="2Ug-vl-bfA"/>
+                                            <constraint firstAttribute="width" constant="359" id="SdW-yS-j21"/>
                                         </constraints>
                                     </mapView>
                                 </subviews>
@@ -918,10 +923,24 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="NCz-A3-HKI" id="W5N-gn-1KB"/>
+                        <outlet property="cloudImage" destination="lQO-xs-CKk" id="V2G-os-d0Q"/>
+                        <outlet property="cloudsStateLabel" destination="Mjh-AH-J92" id="EzK-HK-xlJ"/>
+                        <outlet property="contentWeatherView" destination="2JG-b2-U93" id="bAv-it-sTp"/>
+                        <outlet property="countryNameLabel" destination="n2J-YR-d9c" id="5Zj-tW-4k9"/>
+                        <outlet property="currentDateLabel" destination="Abk-1J-kX1" id="uAC-gK-Maz"/>
+                        <outlet property="humidityLabel" destination="apD-Ky-26k" id="xcC-E7-Nxm"/>
+                        <outlet property="latTextField" destination="zRZ-BY-n78" id="ADe-1b-Ebw"/>
+                        <outlet property="lonTextField" destination="4dH-kQ-ITD" id="IQj-t1-1wO"/>
+                        <outlet property="mapView" destination="Scm-Cs-9j3" id="TMl-Ux-ysi"/>
+                        <outlet property="rainLabel" destination="uT3-TX-o61" id="s3e-Ae-t4J"/>
+                        <outlet property="temperatureLabel" destination="3Fi-MV-RaA" id="GyB-Xu-HcG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVS-fj-9UL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="828"/>
+            <point key="canvasLocation" x="1132" y="827.58620689655174"/>
         </scene>
     </scenes>
     <resources>

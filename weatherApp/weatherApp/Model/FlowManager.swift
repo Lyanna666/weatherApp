@@ -9,12 +9,20 @@
 import Foundation
 import UIKit
 
+enum CurrentView  {
+    case Coordinates
+    case ByName
+}
+
 class FlowManager {
 
     private let dataManager:DataManager
     public var cityName:String!
     
-    var currentView:SearchByNameViewController!
+    var currentView: CurrentView!
+    
+    var searchByNameView:SearchByNameViewController!
+    var searchByCoordinatesView:SearchByCoordenatesViewController!
     
     init() {
         dataManager = DataManager(baseURL: APIModel.BaseURL, apiKey: APIModel.APIKey)
@@ -27,24 +35,49 @@ class FlowManager {
     
     func startRequestGetWeatherByCity (viewController:SearchByNameViewController){
         dataManager.setFlowManager(flowManager: self)
-        self.currentView = viewController
+        self.searchByNameView = viewController
+        
+        self.currentView = CurrentView.ByName
+        
         dataManager.getWeatherByName(cityName:cityName)
     }
     
     func getWeatherByNameFinnished(stateCode:DataManagerError,base:Base?) {
         
-//        let view:SearchByNameViewController = SearchByNameViewController()
-        
-        switch stateCode {
-        case DataManagerError.Ok:
-            currentView.webServiceDidOk(base: base!)
-            break
-        case DataManagerError.Ko:
-            currentView.webServiceFailed()
-            break
-        default:
-            break
+        if (currentView == CurrentView.ByName) {
+            
+            switch stateCode {
+            case DataManagerError.Ok:
+                searchByNameView.webServiceDidOk(base: base!)
+                break
+            case DataManagerError.Ko:
+                searchByNameView.webServiceFailed()
+                break
+            default:
+                break
+            }
         }
+        else if (currentView == CurrentView.Coordinates) {
+            switch stateCode {
+            case DataManagerError.Ok:
+                searchByCoordinatesView.webServiceDidOk(base: base!)
+                break
+            case DataManagerError.Ko:
+                searchByCoordinatesView.webServiceFailed()
+                break
+            default:
+                break
+            }
+        }
+    }
+    
+    func startRequestGetWeatherByCoordinates (viewController:SearchByCoordenatesViewController){
+        dataManager.setFlowManager(flowManager: self)
+        self.searchByCoordinatesView = viewController
+        
+        self.currentView = CurrentView.Coordinates
+        
+        dataManager.getWeatherByName(cityName:cityName)
     }
 
 }
