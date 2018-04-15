@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class SearchByCoordenatesViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIGestureRecognizerDelegate {
+class SearchByCoordenatesViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIGestureRecognizerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -56,6 +56,8 @@ class SearchByCoordenatesViewController: UIViewController, MKMapViewDelegate, CL
         gestureRecognizer.delegate = self
         mapView.addGestureRecognizer(gestureRecognizer)
 
+        self.lonTextField.delegate = self
+        self.latTextField.delegate = self
         
          determineCurrentLocation()
     }
@@ -145,8 +147,13 @@ class SearchByCoordenatesViewController: UIViewController, MKMapViewDelegate, CL
         showAlertView(view: self, textMessage:"Ha ocurrido un error, intentalo más tarde.");
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
     @IBAction func userDidTapSerachButton(_ sender: Any) {
-        
+        self.view.endEditing(true)
         if (self.latTextField.text?.count == 0 || self.lonTextField.text?.count == 0)
         {
             showAlertView(view: self, textMessage:"No puedes dejar ningún campo vacío.")

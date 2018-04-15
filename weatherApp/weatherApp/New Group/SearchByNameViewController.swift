@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchByNameViewController: UIViewController{
+class SearchByNameViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var currentWeatherView: UIView!
     @IBOutlet weak var contentForecastView: UIView!
@@ -62,6 +62,8 @@ class SearchByNameViewController: UIViewController{
         
         self.contentForecastView.layer.cornerRadius = 5
         self.contentForecastView.isHidden = true
+        
+        self.cityTextField.delegate = self;
     }
     
     override func didReceiveMemoryWarning() {
@@ -142,12 +144,16 @@ class SearchByNameViewController: UIViewController{
         self.day6Label.text = getDayString(date: transformStringToDate(format:"yyyy-MM-dd", dateString: forecast.date!))
         self.imageDay6.image = imageFromUrl(urlString: (forecast.day.condition?.icon)!)
         self.temp6Label.text = String(forecast.day.avgtemp_c)+"ºc"
-        
-        
+    
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
     
     @IBAction func userDidTapSearchButton(_ sender: Any) {
+        self.view.endEditing(true);
         if cityTextField.text?.count == 0 {
             showAlertView(view: self, textMessage:"El nombre de la ciudad no puede estar vacío.")
         } else {

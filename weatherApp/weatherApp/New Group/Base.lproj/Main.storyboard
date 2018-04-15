@@ -209,7 +209,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upe-eG-y1P">
                                                 <rect key="frame" x="0.0" y="0.0" width="115.33333333333333" height="130"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humedad: 35%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9v-l6-waw">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humedad: 35%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="q9v-l6-waw">
                                                         <rect key="frame" x="8" y="10" width="102.33333333333333" height="12"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="12.33" id="vqv-2C-5MQ"/>
@@ -218,7 +218,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precipitaciones: 35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-vW-8MG">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precipitaciones: 35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-vW-8MG">
                                                         <rect key="frame" x="8" y="27" width="102.33333333333333" height="12"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="12.33" id="ywi-40-phe"/>
@@ -227,7 +227,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUP-CV-iJv">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="lUP-CV-iJv">
                                                         <rect key="frame" x="5" y="44" width="105.33333333333333" height="81"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -351,13 +351,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxi-AK-tL4">
                                                         <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="118"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGD-gm-Udh">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="HGD-gm-Udh">
                                                                 <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="12.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Oi-iD-Y72">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6Oi-iD-Y72">
                                                                 <rect key="frame" x="0.0" y="94.666666666666686" width="51.666666666666664" height="23.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -385,13 +385,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEL-0Q-7xc">
                                                         <rect key="frame" x="56.666666666666671" y="0.0" width="51.666666666666671" height="118"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI1-QX-5Ff">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="ZI1-QX-5Ff">
                                                                 <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="12.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZX-Lc-dPO">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IZX-Lc-dPO">
                                                                 <rect key="frame" x="0.0" y="94.666666666666686" width="51.666666666666664" height="23.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -419,13 +419,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sL-AP-L8L">
                                                         <rect key="frame" x="113.33333333333336" y="0.0" width="51.666666666666671" height="118"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-8L-Iqx">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-8L-Iqx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="12.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-Pw-AFn">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-Pw-AFn">
                                                                 <rect key="frame" x="0.0" y="94.666666666666686" width="51.666666666666664" height="23.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -453,13 +453,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmE-H1-Sw0">
                                                         <rect key="frame" x="170" y="0.0" width="51.666666666666657" height="118"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elj-Cr-clP">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Elj-Cr-clP">
                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="12.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faC-J3-ffn">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="faC-J3-ffn">
                                                                 <rect key="frame" x="0.0" y="94.666666666666686" width="51.666666666666664" height="23.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -487,13 +487,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bqe-Zt-X0G">
                                                         <rect key="frame" x="226.66666666666666" y="0.0" width="51.666666666666657" height="118"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaL-Z8-TzP">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="BaL-Z8-TzP">
                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="12.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-bD-uXu">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-bD-uXu">
                                                                 <rect key="frame" x="0.0" y="94.666666666666686" width="51.666666666666664" height="23.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -521,13 +521,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVH-6D-6Ci">
                                                         <rect key="frame" x="283.33333333333331" y="0.0" width="51.666666666666686" height="118"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzW-gD-cCP">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="NzW-gD-cCP">
                                                                 <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="12.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwl-r3-2Fv">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Gwl-r3-2Fv">
                                                                 <rect key="frame" x="0.0" y="94.666666666666686" width="51.666666666666664" height="23.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -682,10 +682,10 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-P5-Ris">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce las coordenadas de tu ciudad o seleciona en el mapa el lugar sobre el que quieres buscar información:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-rw-1Xe">
-                                                <rect key="frame" x="20" y="9.9999999999999964" width="335" height="57.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce las coordenadas de tu ciudad o seleciona en el mapa el lugar sobre el que quieres buscar información:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-rw-1Xe">
+                                                <rect key="frame" x="20" y="10" width="335" height="75"/>
                                                 <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -693,7 +693,7 @@
                                                 <size key="shadowOffset" width="1" height="-1"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRZ-BY-n78">
-                                                <rect key="frame" x="20" y="72.666666666666657" width="145" height="40"/>
+                                                <rect key="frame" x="20" y="90" width="145" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Jef-IG-tHg"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="cL5-gU-gGS"/>
@@ -703,7 +703,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dH-kQ-ITD">
-                                                <rect key="frame" x="170" y="72.666666666666657" width="145" height="40"/>
+                                                <rect key="frame" x="170" y="90" width="145" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="CzI-kR-kER"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="kL7-UC-wf4"/>
@@ -713,7 +713,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-qJ-kOv">
-                                                <rect key="frame" x="325" y="77.666666666666657" width="30" height="30"/>
+                                                <rect key="frame" x="325" y="95" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="3dQ-qx-OUf"/>
                                                     <constraint firstAttribute="width" constant="30" id="TlJ-Tw-srT"/>
@@ -731,24 +731,24 @@
                                             <constraint firstItem="zRZ-BY-n78" firstAttribute="leading" secondItem="tcc-P5-Ris" secondAttribute="leading" constant="20" id="EgP-Lt-j73"/>
                                             <constraint firstItem="4dH-kQ-ITD" firstAttribute="width" secondItem="zRZ-BY-n78" secondAttribute="width" id="JSp-jE-3Jm"/>
                                             <constraint firstAttribute="trailing" secondItem="Kfk-rw-1Xe" secondAttribute="trailing" constant="20" id="Rjo-XW-0WS"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zRZ-BY-n78" secondAttribute="bottom" constant="10" id="Svw-yW-y3C"/>
+                                            <constraint firstAttribute="bottom" secondItem="zRZ-BY-n78" secondAttribute="bottom" constant="10" id="Svw-yW-y3C"/>
                                             <constraint firstItem="Kfk-rw-1Xe" firstAttribute="leading" secondItem="tcc-P5-Ris" secondAttribute="leading" constant="20" id="TYP-Wb-F8k"/>
                                             <constraint firstItem="zRZ-BY-n78" firstAttribute="top" secondItem="Kfk-rw-1Xe" secondAttribute="bottom" constant="5" id="WuR-C5-Ncl"/>
                                             <constraint firstItem="4dH-kQ-ITD" firstAttribute="top" secondItem="Kfk-rw-1Xe" secondAttribute="bottom" constant="5" id="bFK-UU-3WV"/>
                                             <constraint firstItem="4dH-kQ-ITD" firstAttribute="leading" secondItem="zRZ-BY-n78" secondAttribute="trailing" constant="5" id="hEe-ZN-2jo"/>
                                             <constraint firstItem="Kfk-rw-1Xe" firstAttribute="top" secondItem="tcc-P5-Ris" secondAttribute="top" constant="10" id="iWC-U5-9Cg"/>
                                             <constraint firstItem="Hph-qJ-kOv" firstAttribute="leading" secondItem="4dH-kQ-ITD" secondAttribute="trailing" constant="10" id="igN-yo-cK0"/>
-                                            <constraint firstAttribute="height" constant="130" id="pVj-in-KhS"/>
+                                            <constraint firstAttribute="height" constant="140" id="pVj-in-KhS"/>
                                             <constraint firstItem="Hph-qJ-kOv" firstAttribute="centerY" secondItem="zRZ-BY-n78" secondAttribute="centerY" id="vAB-uP-fET"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JG-b2-U93">
-                                        <rect key="frame" x="14" y="140" width="346" height="130"/>
+                                        <rect key="frame" x="14" y="150" width="346" height="130"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhH-cu-rmd">
                                                 <rect key="frame" x="0.0" y="0.0" width="115.33333333333333" height="130"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humedad: 35%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apD-Ky-26k">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humedad: 35%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="apD-Ky-26k">
                                                         <rect key="frame" x="8" y="10" width="102.33333333333333" height="12"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="12.33" id="g13-tc-HNp"/>
@@ -757,7 +757,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precipitaciones: 35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT3-TX-o61">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precipitaciones: 35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="uT3-TX-o61">
                                                         <rect key="frame" x="8" y="27" width="102.33333333333333" height="12"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="12.33" id="0eu-tC-Jiw"/>
@@ -766,7 +766,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fi-MV-RaA">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17ºc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3Fi-MV-RaA">
                                                         <rect key="frame" x="5" y="44" width="105.33333333333333" height="81"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -882,7 +882,7 @@
                                         </constraints>
                                     </view>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-Cs-9j3">
-                                        <rect key="frame" x="8" y="290" width="359" height="250"/>
+                                        <rect key="frame" x="8" y="300" width="359" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="2Ug-vl-bfA"/>
                                             <constraint firstAttribute="width" constant="359" id="SdW-yS-j21"/>

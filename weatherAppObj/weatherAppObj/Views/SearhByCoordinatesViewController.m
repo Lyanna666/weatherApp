@@ -11,7 +11,7 @@
 #import "FlowManager.h"
 #import <CoreLocation/CoreLocation.h>
 
-@interface SearhByCoordinatesViewController () <MKMapViewDelegate,CLLocationManagerDelegate, UIGestureRecognizerDelegate>
+@interface SearhByCoordinatesViewController () <MKMapViewDelegate,CLLocationManagerDelegate, UIGestureRecognizerDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UITextField *latTextField;
@@ -55,8 +55,8 @@
     self.navigationController.navigationBar.tintColor = UIColor.whiteColor;
     
     self.searchButton.layer.cornerRadius = self.searchButton.frame.size.height/2;
-    self.searchButton.layer.borderColor = UIColor.blackColor.CGColor;
-    self.searchButton.layer.borderWidth = 1;
+    self.searchButton.layer.borderColor = [UIColor colorNamed:@"Salmon"].CGColor;
+    self.searchButton.layer.borderWidth = 3;
     
     self.rainContentView.layer.cornerRadius = self.rainContentView.frame.size.height/2;
     self.humedityContentView.layer.cornerRadius = self.humedityContentView.frame.size.height/2;
@@ -77,6 +77,9 @@
     self.locationManager.delegate = self;
     self.latTextField.text = [NSString stringWithFormat:@"%f",self.locationManager.location.coordinate.latitude];
     self.lonTextField.text = [NSString stringWithFormat:@"%f",self.locationManager.location.coordinate.longitude];
+    self.lonTextField.delegate = self;
+    self.latTextField.delegate = self;
+
     
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
     annotation.coordinate = self.locationManager.location.coordinate;
@@ -88,6 +91,12 @@
     
     [self userDidTapSearch:0];
     
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [self.view endEditing:YES];
+    return YES;
 }
 
 -(void)mapDidTap:(UITapGestureRecognizer *)gestureRecognizer {
@@ -112,6 +121,8 @@
 }
 
 - (IBAction)userDidTapSearch:(id)sender {
+    
+    [self.view endEditing:YES];
     
     if (self.latTextField.text.length > 0 && self.lonTextField.text.length > 0)
     {

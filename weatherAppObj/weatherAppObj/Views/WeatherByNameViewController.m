@@ -13,7 +13,7 @@
 #import "ForecastdayModel.h"
 
 
-@interface WeatherByNameViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface WeatherByNameViewController () <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UITextField *cityNameTextField;
@@ -57,6 +57,8 @@
     
     self.searchButton.layer.cornerRadius = self.searchButton.frame.size.height/2;
     
+    self.cityNameTextField.delegate = self;
+    
     self.rainContentView.layer.cornerRadius = self.rainContentView.frame.size.height/2;
     self.humedityContentView.layer.cornerRadius = self.humedityContentView.frame.size.height/2;
     self.windContentView.layer.cornerRadius = self.windContentView.frame.size.height/2;
@@ -92,7 +94,15 @@
     
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.view endEditing:YES];
+    return YES;
+}
+
 - (IBAction)userDidTapSearch:(id)sender {
+    
+    [self.view endEditing:YES];
     
     if (self.cityNameTextField.text.length > 0 )
     {

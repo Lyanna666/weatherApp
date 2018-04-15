@@ -9,6 +9,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -495,14 +496,14 @@
             <objects>
                 <viewController id="Jiu-CC-PvN" customClass="SearhByCoordinatesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vie-du-W6p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="936"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="686"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1r3-iI-x8V">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="936"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r3-iI-x8V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="686"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-Ry-IHi">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="171" width="375" height="250"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-pu-kwZ">
                                                 <rect key="frame" x="15" y="15" width="345" height="20"/>
@@ -654,7 +655,7 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitud" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDL-b3-U1p">
-                                        <rect key="frame" x="8" y="520" width="359" height="40"/>
+                                        <rect key="frame" x="8" y="20" width="359" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="7L1-Ud-T38"/>
                                         </constraints>
@@ -663,7 +664,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVZ-FC-F2n">
-                                        <rect key="frame" x="0.0" y="250" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="421" width="375" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="t03-72-zC8"/>
                                         </constraints>
@@ -672,7 +673,7 @@
                                         </connections>
                                     </mapView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitud" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-4W-gBS">
-                                        <rect key="frame" x="8" y="568" width="359" height="40"/>
+                                        <rect key="frame" x="8" y="68" width="359" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="J59-du-RXT"/>
                                         </constraints>
@@ -681,13 +682,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lST-GC-1KQ">
-                                        <rect key="frame" x="15" y="616" width="345" height="40"/>
+                                        <rect key="frame" x="15" y="116" width="345" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="naG-VX-OPP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DecimaNovaPro-Bold" family="Decima Nova Pro" pointSize="20"/>
                                         <state key="normal" title="Buscar por coordenadas">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" name="Salmon"/>
                                         </state>
                                         <connections>
                                             <action selector="userDidTapSearch:" destination="Jiu-CC-PvN" eventType="touchUpInside" id="1CR-RB-7a5"/>
@@ -695,26 +696,26 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RVZ-FC-F2n" secondAttribute="bottom" constant="15" id="Asf-c9-a2G"/>
+                                    <constraint firstItem="EaJ-Ry-IHi" firstAttribute="top" secondItem="lST-GC-1KQ" secondAttribute="bottom" constant="15" id="D7K-RL-GzF"/>
                                     <constraint firstAttribute="trailing" secondItem="lST-GC-1KQ" secondAttribute="trailing" constant="15" id="Egc-Xc-OiX"/>
                                     <constraint firstItem="lDL-b3-U1p" firstAttribute="leading" secondItem="1r3-iI-x8V" secondAttribute="leading" constant="8" id="F1D-B3-ePC"/>
                                     <constraint firstAttribute="trailing" secondItem="RVZ-FC-F2n" secondAttribute="trailing" id="I68-Rh-umt"/>
                                     <constraint firstItem="lST-GC-1KQ" firstAttribute="leading" secondItem="1r3-iI-x8V" secondAttribute="leading" constant="15" id="NpB-Yk-MdK"/>
-                                    <constraint firstItem="lDL-b3-U1p" firstAttribute="top" secondItem="RVZ-FC-F2n" secondAttribute="bottom" constant="20" id="OwO-8n-J3Y"/>
                                     <constraint firstItem="RVZ-FC-F2n" firstAttribute="leading" secondItem="1r3-iI-x8V" secondAttribute="leading" id="Qp4-TX-c4J"/>
                                     <constraint firstAttribute="trailing" secondItem="AaT-4W-gBS" secondAttribute="trailing" constant="8" id="S5Y-jY-ZJ5"/>
                                     <constraint firstItem="AaT-4W-gBS" firstAttribute="top" secondItem="lDL-b3-U1p" secondAttribute="bottom" constant="8" id="Xby-zD-udo"/>
                                     <constraint firstAttribute="trailing" secondItem="lDL-b3-U1p" secondAttribute="trailing" constant="8" id="bkL-BL-SJG"/>
+                                    <constraint firstItem="lDL-b3-U1p" firstAttribute="top" secondItem="1r3-iI-x8V" secondAttribute="top" constant="20" id="gAb-9m-2hE"/>
                                     <constraint firstItem="RVZ-FC-F2n" firstAttribute="top" secondItem="EaJ-Ry-IHi" secondAttribute="bottom" id="jwq-8p-A9X"/>
                                     <constraint firstItem="EaJ-Ry-IHi" firstAttribute="leading" secondItem="1r3-iI-x8V" secondAttribute="leading" id="k4q-w4-mCl"/>
                                     <constraint firstAttribute="trailing" secondItem="EaJ-Ry-IHi" secondAttribute="trailing" id="k4v-V4-OJA"/>
-                                    <constraint firstItem="EaJ-Ry-IHi" firstAttribute="top" secondItem="1r3-iI-x8V" secondAttribute="top" id="mcm-Dk-0B2"/>
                                     <constraint firstItem="lST-GC-1KQ" firstAttribute="top" secondItem="AaT-4W-gBS" secondAttribute="bottom" constant="8" id="tio-Go-Lh6"/>
-                                    <constraint firstAttribute="bottom" secondItem="lST-GC-1KQ" secondAttribute="bottom" constant="10" id="u15-Jq-gWO"/>
                                     <constraint firstItem="AaT-4W-gBS" firstAttribute="leading" secondItem="1r3-iI-x8V" secondAttribute="leading" constant="8" id="xBk-Q5-2By"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Violet"/>
                         <constraints>
                             <constraint firstItem="EaJ-Ry-IHi" firstAttribute="width" secondItem="vie-du-W6p" secondAttribute="width" id="6Jb-WX-0QQ"/>
                             <constraint firstItem="1r3-iI-x8V" firstAttribute="leading" secondItem="BSl-Yh-GqH" secondAttribute="leading" id="7uo-bR-3vN"/>
@@ -724,7 +725,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BSl-Yh-GqH"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="750"/>
                     <connections>
                         <outlet property="countryNameLabel" destination="g5c-pu-kwZ" id="vve-Kx-CNt"/>
                         <outlet property="currentDateLabel" destination="mXJ-Z3-xb4" id="xCH-nt-Rcr"/>
@@ -752,5 +753,11 @@
         <image name="background_image" width="750" height="1334"/>
         <image name="icon" width="256" height="256"/>
         <image name="wind" width="500" height="393"/>
+        <namedColor name="Salmon">
+            <color red="1" green="0.49300000071525574" blue="0.47400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Violet">
+            <color red="0.32400000095367432" green="0.10599999874830246" blue="0.57499998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
