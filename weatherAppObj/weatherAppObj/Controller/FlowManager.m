@@ -8,6 +8,7 @@
 
 #import "FlowManager.h"
 #import "DataManager.h"
+#import "Utils.h"
 
 @interface FlowManager ()
 
@@ -37,8 +38,7 @@
     
     switch (self.currentView) {
         case ByName:
-            
-            self.viewControllerByName 
+            [self.viewControllerByName printData:self.currentModel];
             
             break;
         case ByCoordinates:
@@ -49,5 +49,21 @@
     
 }
 
+- (void)getWeatherRequestFailed {
+    
+    switch (self.currentView) {
+        case ByName:
+            
+            [Utils dismissLoadingView:self.viewControllerByName.view];
+            [Utils showAlertView:self.viewControllerByName textMessage:@"Lo sentimos, ha ocurrido un error."];
+            break;
+        case ByCoordinates:
+            [Utils dismissLoadingView:self.viewControllerByName.view];
+            [Utils showAlertView:self.viewControllerByName textMessage:@"Lo sentimos, ha ocurrido un error."];
+            break;
+        default:
+            break;
+    }
+}
 
 @end

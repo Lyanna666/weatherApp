@@ -29,6 +29,8 @@
 		BD90C46420837F68006EB373 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD90C46320837F68006EB373 /* CoreData.framework */; };
 		BD90C46B20838255006EB373 /* CurrentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C46920838255006EB373 /* CurrentModel.m */; };
 		BD90C47120838F8E006EB373 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C47020838F8E006EB373 /* Utils.m */; };
+		BD90C4752083B320006EB373 /* ForecastdayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C4742083B320006EB373 /* ForecastdayModel.m */; };
+		BD90C4782083B66D006EB373 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C4772083B66D006EB373 /* CustomTableViewCell.m */; };
 		BDD3D1682083615E00F35683 /* WeatherByNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD3D1672083615E00F35683 /* WeatherByNameViewController.m */; };
 		BDD3D16D2083669C00F35683 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD3D16C2083669C00F35683 /* DataManager.m */; };
 		BDD3D1A22083710500F35683 /* FlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD3D1A12083710500F35683 /* FlowManager.m */; };
@@ -92,6 +94,10 @@
 		BD90C46A20838255006EB373 /* CurrentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentModel.h; sourceTree = "<group>"; };
 		BD90C46F20838F8E006EB373 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		BD90C47020838F8E006EB373 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		BD90C4732083B320006EB373 /* ForecastdayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastdayModel.h; sourceTree = "<group>"; };
+		BD90C4742083B320006EB373 /* ForecastdayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastdayModel.m; sourceTree = "<group>"; };
+		BD90C4762083B66D006EB373 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		BD90C4772083B66D006EB373 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		BDD3D1662083615E00F35683 /* WeatherByNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherByNameViewController.h; sourceTree = "<group>"; };
 		BDD3D1672083615E00F35683 /* WeatherByNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherByNameViewController.m; sourceTree = "<group>"; };
 		BDD3D16B2083669C00F35683 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -207,6 +213,8 @@
 				BD02194120834AE2006964A5 /* HomeViewController.h */,
 				BD02194220834AE2006964A5 /* HomeViewController.m */,
 				BD02194420834AE2006964A5 /* Main.storyboard */,
+				BD90C4762083B66D006EB373 /* CustomTableViewCell.h */,
+				BD90C4772083B66D006EB373 /* CustomTableViewCell.m */,
 				BDD3D1662083615E00F35683 /* WeatherByNameViewController.h */,
 				BDD3D1672083615E00F35683 /* WeatherByNameViewController.m */,
 			);
@@ -220,6 +228,8 @@
 				BDD3D16C2083669C00F35683 /* DataManager.m */,
 				BD90C46A20838255006EB373 /* CurrentModel.h */,
 				BD90C46920838255006EB373 /* CurrentModel.m */,
+				BD90C4732083B320006EB373 /* ForecastdayModel.h */,
+				BD90C4742083B320006EB373 /* ForecastdayModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -470,7 +480,9 @@
 				BD90C46B20838255006EB373 /* CurrentModel.m in Sources */,
 				BD90C47120838F8E006EB373 /* Utils.m in Sources */,
 				BD02194920834AE2006964A5 /* weatherAppObj.xcdatamodeld in Sources */,
+				BD90C4752083B320006EB373 /* ForecastdayModel.m in Sources */,
 				BDD3D16D2083669C00F35683 /* DataManager.m in Sources */,
+				BD90C4782083B66D006EB373 /* CustomTableViewCell.m in Sources */,
 				BD02194320834AE2006964A5 /* HomeViewController.m in Sources */,
 				BD02195120834AE3006964A5 /* main.m in Sources */,
 				BDD3D1682083615E00F35683 /* WeatherByNameViewController.m in Sources */,

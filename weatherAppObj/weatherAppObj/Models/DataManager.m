@@ -20,21 +20,17 @@ static NSString * const Apikey = @"d3fd5aebb09a499aa77165755180704";
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@?key=%@&q=%@", BaseURLString,Apikey,cityName]];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@?key=%@&q=%@&days=6", BaseURLString,Apikey,cityName]];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
             NSLog(@"Error: %@", error);
+            [self.flowManager getWeatherRequestFailed];
         } else {
-//            NSLog(@"%@ %@", response, responseObject);
-            
+            NSLog(@"%@ %@", response, responseObject);
             CurrentModel *currentModel = [[CurrentModel alloc] initWithDictionary:responseObject];
-            
             [self.flowManager getWeatherRequestEnded:currentModel];
-            
-            
-            
         }
     }];
     [dataTask resume];

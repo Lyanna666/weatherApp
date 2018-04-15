@@ -20,6 +20,7 @@ typedef enum {
 } CurrentView;
 
 
+- (void)getWeatherRequestFailed;
 - (void)getCurrentWeather:(NSString *)cityName;
 - (void)getWeatherRequestEnded:(CurrentModel *)currentModel;
 

@@ -9,15 +9,12 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ConditionModel:NSObject
+@interface CurrentModel:NSObject
 
-@property int code;
-@property NSString *icon;
-@property NSString *text;
-
-@end
-
-@interface Location:NSObject
+@property double humidity;
+@property NSInteger tempC;
+@property double precipMm;
+@property double windKph;
 
 @property NSString *country;
 @property NSString *localtime;
@@ -25,16 +22,11 @@
 @property NSString *lat;
 @property NSString *name;
 
-@end
+@property int code;
+@property NSString *icon;
+@property NSString *text;
 
-@interface CurrentModel:NSObject
-
-@property double humidity;
-@property double temp_c;
-@property double precip_mm;
-@property double wind_kph;
-@property ConditionModel *condition;
-@property Location *location;
+@property NSArray *forecast;
 
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 

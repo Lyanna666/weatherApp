@@ -13,4 +13,6 @@
 
 - (void)printData:(CurrentModel *)currentModel;
 
+@property (strong, nonatomic) CurrentModel *currentModel;
+
 @end
