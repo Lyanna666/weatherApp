@@ -31,6 +31,7 @@
 		BD90C47120838F8E006EB373 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C47020838F8E006EB373 /* Utils.m */; };
 		BD90C4752083B320006EB373 /* ForecastdayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C4742083B320006EB373 /* ForecastdayModel.m */; };
 		BD90C4782083B66D006EB373 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C4772083B66D006EB373 /* CustomTableViewCell.m */; };
+		BD90C47B2083D2F5006EB373 /* SearhByCoordinatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90C47A2083D2F5006EB373 /* SearhByCoordinatesViewController.m */; };
 		BDD3D1682083615E00F35683 /* WeatherByNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD3D1672083615E00F35683 /* WeatherByNameViewController.m */; };
 		BDD3D16D2083669C00F35683 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD3D16C2083669C00F35683 /* DataManager.m */; };
 		BDD3D1A22083710500F35683 /* FlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD3D1A12083710500F35683 /* FlowManager.m */; };
@@ -98,6 +99,8 @@
 		BD90C4742083B320006EB373 /* ForecastdayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastdayModel.m; sourceTree = "<group>"; };
 		BD90C4762083B66D006EB373 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		BD90C4772083B66D006EB373 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		BD90C4792083D2F5006EB373 /* SearhByCoordinatesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearhByCoordinatesViewController.h; sourceTree = "<group>"; };
+		BD90C47A2083D2F5006EB373 /* SearhByCoordinatesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearhByCoordinatesViewController.m; sourceTree = "<group>"; };
 		BDD3D1662083615E00F35683 /* WeatherByNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherByNameViewController.h; sourceTree = "<group>"; };
 		BDD3D1672083615E00F35683 /* WeatherByNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherByNameViewController.m; sourceTree = "<group>"; };
 		BDD3D16B2083669C00F35683 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 				BD90C4772083B66D006EB373 /* CustomTableViewCell.m */,
 				BDD3D1662083615E00F35683 /* WeatherByNameViewController.h */,
 				BDD3D1672083615E00F35683 /* WeatherByNameViewController.m */,
+				BD90C4792083D2F5006EB373 /* SearhByCoordinatesViewController.h */,
+				BD90C47A2083D2F5006EB373 /* SearhByCoordinatesViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD90C46B20838255006EB373 /* CurrentModel.m in Sources */,
+				BD90C47B2083D2F5006EB373 /* SearhByCoordinatesViewController.m in Sources */,
 				BD90C47120838F8E006EB373 /* Utils.m in Sources */,
 				BD02194920834AE2006964A5 /* weatherAppObj.xcdatamodeld in Sources */,
 				BD90C4752083B320006EB373 /* ForecastdayModel.m in Sources */,

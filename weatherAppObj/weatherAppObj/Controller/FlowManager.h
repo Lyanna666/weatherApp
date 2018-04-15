@@ -10,7 +10,7 @@
 #import "CurrentModel.h"
 #import <UIKit/UIKit.h>
 #import "WeatherByNameViewController.h"
-
+#import "SearhByCoordinatesViewController.h"
 
 @interface FlowManager : NSObject
 
@@ -25,7 +25,7 @@ typedef enum {
 - (void)getWeatherRequestEnded:(CurrentModel *)currentModel;
 
 @property (assign,nonatomic) CurrentView currentView;
-
+@property (strong,nonatomic) SearhByCoordinatesViewController *viewControllerByCoordinates;
 @property (strong,nonatomic) WeatherByNameViewController *viewControllerByName;
 
 @end

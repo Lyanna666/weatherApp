@@ -39,9 +39,9 @@
     switch (self.currentView) {
         case ByName:
             [self.viewControllerByName printData:self.currentModel];
-            
             break;
         case ByCoordinates:
+            [self.viewControllerByCoordinates printData:self.currentModel];
             break;
         default:
             break;
@@ -58,8 +58,8 @@
             [Utils showAlertView:self.viewControllerByName textMessage:@"Lo sentimos, ha ocurrido un error."];
             break;
         case ByCoordinates:
-            [Utils dismissLoadingView:self.viewControllerByName.view];
-            [Utils showAlertView:self.viewControllerByName textMessage:@"Lo sentimos, ha ocurrido un error."];
+            [Utils dismissLoadingView:self.viewControllerByCoordinates.view];
+            [Utils showAlertView:self.viewControllerByCoordinates textMessage:@"Lo sentimos, ha ocurrido un error."];
             break;
         default:
             break;

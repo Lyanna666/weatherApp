@@ -16,6 +16,9 @@
         <array key="Decima Nova Pro Bold.otf">
             <string>DecimaNovaPro-Bold</string>
         </array>
+        <array key="Decima Nova Pro Light.otf">
+            <string>DecimaNovaProLt</string>
+        </array>
         <array key="Decima Nova Pro.otf">
             <string>DecimaNovaPro</string>
         </array>
@@ -46,9 +49,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="ePW-u8-7YZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LJ-fv-1fH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherApp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJT-bD-yMO">
+                                        <rect key="frame" x="20" y="128.5" width="335" height="38"/>
+                                        <fontDescription key="fontDescription" name="DecimaNovaProLt" family="Decima Nova Pro" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pJT-bD-yMO" firstAttribute="leading" secondItem="6LJ-fv-1fH" secondAttribute="leading" constant="20" id="DOc-J7-dQZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="pJT-bD-yMO" secondAttribute="trailing" constant="20" id="PGn-vJ-CpD"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXD-p1-8QW">
                                 <rect key="frame" x="15" y="468" width="345" height="40"/>
@@ -56,7 +74,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SDA-sd-i3v"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="DecimaNovaPro-Bold" family="Decima Nova Pro" pointSize="20"/>
                                 <state key="normal" title="Buscar por nombre">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -69,7 +87,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GEM-Pj-7Gj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DecimaNovaPro" family="Decima Nova Pro" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="DecimaNovaPro-Bold" family="Decima Nova Pro" pointSize="20"/>
                                 <state key="normal" title="Buscar por coordenadas">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -78,7 +96,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="s7I-NU-SCC">
-                                <rect key="frame" x="93.5" y="40" width="187.5" height="187.5"/>
+                                <rect key="frame" x="140.5" y="20" width="94" height="93.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s7I-NU-SCC" secondAttribute="height" multiplier="1:1" id="lIl-t7-u1h"/>
                                 </constraints>
@@ -87,16 +105,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXD-p1-8QW" secondAttribute="trailing" constant="15" id="16A-Ix-LMo"/>
+                            <constraint firstItem="ePW-u8-7YZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1b0-25-VgT"/>
+                            <constraint firstItem="ePW-u8-7YZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Rc-Lw-rms"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MGb-fo-g16" secondAttribute="bottom" constant="40" id="Bqh-5k-iTJ"/>
                             <constraint firstItem="s7I-NU-SCC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fy0-hf-3yK"/>
                             <constraint firstItem="6LJ-fv-1fH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LLE-cE-Tye"/>
                             <constraint firstItem="MGb-fo-g16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pqk-rp-i9a"/>
-                            <constraint firstItem="s7I-NU-SCC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="RMI-oN-IYo"/>
+                            <constraint firstItem="s7I-NU-SCC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/4" id="RMI-oN-IYo"/>
                             <constraint firstItem="6LJ-fv-1fH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SWB-P0-LIE"/>
-                            <constraint firstItem="s7I-NU-SCC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Wg2-9s-FTA"/>
+                            <constraint firstItem="s7I-NU-SCC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Wg2-9s-FTA"/>
                             <constraint firstItem="6LJ-fv-1fH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hzu-oc-hmP"/>
                             <constraint firstItem="MGb-fo-g16" firstAttribute="top" secondItem="YXD-p1-8QW" secondAttribute="bottom" constant="15" id="nih-hz-ZaQ"/>
                             <constraint firstItem="YXD-p1-8QW" firstAttribute="centerX" secondItem="MGb-fo-g16" secondAttribute="centerX" id="p5g-xi-aZr"/>
+                            <constraint firstItem="pJT-bD-yMO" firstAttribute="top" secondItem="s7I-NU-SCC" secondAttribute="bottom" constant="15" id="tFc-WW-Cy8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ePW-u8-7YZ" secondAttribute="trailing" id="tPM-UC-Y1v"/>
+                            <constraint firstItem="ePW-u8-7YZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vBG-Af-0Mb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MGb-fo-g16" secondAttribute="trailing" constant="15" id="vf0-Vu-WRd"/>
                             <constraint firstItem="6LJ-fv-1fH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="y5F-Ag-Kh6"/>
                         </constraints>
@@ -106,13 +129,14 @@
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="Ri8-2Y-r2O"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="s7I-NU-SCC" id="zZr-OC-TFC"/>
                         <outlet property="searchByCoordinatesButton" destination="MGb-fo-g16" id="wWC-JD-a6I"/>
                         <outlet property="searchByNameButton" destination="YXD-p1-8QW" id="pOm-Vi-fB5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="134"/>
+            <point key="canvasLocation" x="-626.39999999999998" y="133.5832083958021"/>
         </scene>
         <!--Weather By Name View Controller-->
         <scene sceneID="SsC-1E-leq">
@@ -301,7 +325,7 @@
                                             <action selector="userDidTapSearch:" destination="FgQ-Cg-a0H" eventType="touchUpInside" id="E3E-V6-w7x"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prognóstico:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-dy-q1u">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pronóstico:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-dy-q1u">
                                         <rect key="frame" x="15" y="373" width="345" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="sBM-aA-80U"/>
@@ -466,10 +490,10 @@
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="133.13343328335833"/>
         </scene>
-        <!--View Controller-->
+        <!--Searh By Coordinates View Controller-->
         <scene sceneID="RLG-SP-wWd">
             <objects>
-                <viewController id="Jiu-CC-PvN" sceneMemberID="viewController">
+                <viewController id="Jiu-CC-PvN" customClass="SearhByCoordinatesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vie-du-W6p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="936"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -638,11 +662,14 @@
                                         <fontDescription key="fontDescription" name="DecimaNovaPro-Bold" family="Decima Nova Pro" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RVZ-FC-F2n">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVZ-FC-F2n">
                                         <rect key="frame" x="0.0" y="250" width="375" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="t03-72-zC8"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="delegate" destination="Jiu-CC-PvN" id="tCA-bN-PrK"/>
+                                        </connections>
                                     </mapView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitud" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-4W-gBS">
                                         <rect key="frame" x="8" y="568" width="359" height="40"/>
@@ -662,6 +689,9 @@
                                         <state key="normal" title="Buscar por coordenadas">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="userDidTapSearch:" destination="Jiu-CC-PvN" eventType="touchUpInside" id="1CR-RB-7a5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -695,6 +725,22 @@
                         <viewLayoutGuide key="safeArea" id="BSl-Yh-GqH"/>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="countryNameLabel" destination="g5c-pu-kwZ" id="vve-Kx-CNt"/>
+                        <outlet property="currentDateLabel" destination="mXJ-Z3-xb4" id="xCH-nt-Rcr"/>
+                        <outlet property="humedityContentView" destination="a2G-a5-3oB" id="SIm-Zf-tJ3"/>
+                        <outlet property="humedityLabel" destination="GrL-hY-zdi" id="QQE-N4-gc1"/>
+                        <outlet property="latTextField" destination="lDL-b3-U1p" id="1C6-s6-EZO"/>
+                        <outlet property="lonTextField" destination="AaT-4W-gBS" id="ZEL-gy-eK1"/>
+                        <outlet property="mapKit" destination="RVZ-FC-F2n" id="Sia-ii-K1k"/>
+                        <outlet property="rainContentView" destination="rBr-nc-DcU" id="LTg-dU-FU8"/>
+                        <outlet property="rainLabel" destination="AWk-gq-ARB" id="UJb-pa-rYS"/>
+                        <outlet property="searchButton" destination="lST-GC-1KQ" id="ZOM-le-2zh"/>
+                        <outlet property="stateImage" destination="Qot-vY-0cs" id="LLn-sI-sdJ"/>
+                        <outlet property="tempLabel" destination="apI-kv-tVl" id="nJJ-Sd-kYY"/>
+                        <outlet property="windContentView" destination="76i-uZ-TiA" id="Aqf-HW-2QH"/>
+                        <outlet property="windLabel" destination="G66-KI-Z0T" id="FCf-Z5-F0Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7Q-2h-UjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,6 +749,7 @@
     </scenes>
     <resources>
         <image name="Image" width="350" height="350"/>
+        <image name="background_image" width="750" height="1334"/>
         <image name="icon" width="256" height="256"/>
         <image name="wind" width="500" height="393"/>
     </resources>

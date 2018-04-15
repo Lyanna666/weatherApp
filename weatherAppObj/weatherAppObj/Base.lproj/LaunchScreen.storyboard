@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Decima Nova Pro Light.otf">
+            <string>DecimaNovaProLt</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -21,13 +26,36 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="IMR-0k-acz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVP-i3-blf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherApp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unR-8d-63h">
+                                        <rect key="frame" x="20" y="589" width="335" height="38"/>
+                                        <fontDescription key="fontDescription" name="DecimaNovaProLt" family="Decima Nova Pro" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="unR-8d-63h" secondAttribute="trailing" constant="20" id="RBd-qN-iPA"/>
+                                    <constraint firstAttribute="trailing" secondItem="unR-8d-63h" secondAttribute="trailing" constant="20" id="TRD-ur-eE3"/>
+                                    <constraint firstAttribute="bottom" secondItem="unR-8d-63h" secondAttribute="bottom" constant="40" id="UjA-PH-7IN"/>
+                                    <constraint firstItem="unR-8d-63h" firstAttribute="leading" secondItem="fVP-i3-blf" secondAttribute="leading" constant="20" id="gmY-NG-6lj"/>
+                                    <constraint firstItem="unR-8d-63h" firstAttribute="leading" secondItem="fVP-i3-blf" secondAttribute="leading" constant="20" id="nr0-Ia-8Rg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IMR-0k-acz" secondAttribute="trailing" id="53O-07-RR6"/>
+                            <constraint firstItem="fVP-i3-blf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GPG-DE-IYP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IMR-0k-acz" secondAttribute="bottom" id="NRL-ir-dDS"/>
+                            <constraint firstItem="fVP-i3-blf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ssz-Ib-Nk5"/>
                             <constraint firstItem="IMR-0k-acz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ux9-km-iW3"/>
+                            <constraint firstAttribute="trailing" secondItem="fVP-i3-blf" secondAttribute="trailing" id="cch-bq-mf3"/>
                             <constraint firstItem="IMR-0k-acz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oL8-Ey-wSp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fVP-i3-blf" secondAttribute="bottom" id="zJd-qp-2O1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
